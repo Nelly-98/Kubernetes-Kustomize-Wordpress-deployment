@@ -1,0 +1,22 @@
+resources:
+- wordpress
+- mysql
+namePrefix: datascientest-
+
+vars:
+- fieldref: {}
+  name: WORDPRESS_SERVICE
+  objref:
+    apiVersion: v1
+    kind: Service
+    name: wordpress
+- fieldref: {}
+  name: MYSQL_SERVICE
+  objref:
+    apiVersion: v1
+    kind: Service
+    name: mysql
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+patches:
+- path: patch.yaml
