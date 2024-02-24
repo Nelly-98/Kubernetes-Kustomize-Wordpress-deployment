@@ -13,14 +13,15 @@ Nous allons déployer une application Wordpress grâce à Kustomise. Ceci sera l
 #### ├─ kustomization.yaml
 #### └─ service.yaml
 
---Nous pouvons à présent lancer la commande suivante afin de construire nos fichiers finaux dans le répertoire wordpress-datascientest :
+## Apres avoir cloné le projet 
+#### vous pouvez à présent lancer la commande suivante afin de construire nos fichiers finaux dans le répertoire wordpress-datascientest :
 
 kustomize build wordpress-datascientest
 
---Nous pouvons ensuite appliquer nos configurations de la façon suivante :
+#### Vous pouvez ensuite appliquer nos configurations de la façon suivante :
 
 kubectl apply -k wordpress-datascientest
 
---Nous pouvons vérifier la création de nos ressources :
+#### Vous pouvez vérifier la création de nos ressources :
 
 kubectl get all
