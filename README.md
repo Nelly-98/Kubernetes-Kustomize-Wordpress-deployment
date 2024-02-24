@@ -1,12 +1,10 @@
 # Kubernetes-Kustomize-Wordpress-deployment
 
 Nous allons déployer une application Wordpress grâce à Kustomise. Ceci sera la structure pour notre projet Wordpress :
-
-### wordpress-datascientest
+### kustomization.yaml
+### mysql
+#### ├── deployment.yaml
 #### ├── kustomization.yaml
-#### ├── mysql
-│   ├── deployment.yaml
-│   ├── kustomization.yaml
 │   ├── secret.yaml
 │   └── service.yaml
 ├── patch.yaml
