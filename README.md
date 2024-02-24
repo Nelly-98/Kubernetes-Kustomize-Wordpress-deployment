@@ -2,9 +2,9 @@
 
 Nous allons déployer une application Wordpress grâce à Kustomise. Ceci sera la structure pour notre projet Wordpress :
 
-wordpress-datascientest
-├── kustomization.yaml
-├── mysql
+### wordpress-datascientest
+#### ├── kustomization.yaml
+#### ├── mysql
 │   ├── deployment.yaml
 │   ├── kustomization.yaml
 │   ├── secret.yaml
